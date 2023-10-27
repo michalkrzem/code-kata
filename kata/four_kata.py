@@ -29,8 +29,9 @@ def multiply(n):
 
 def persistence(n):
     counter = multiply(n)
+    print(counter)
     return counter
 
 
-print(persistence(4))
+persistence(4)
 
