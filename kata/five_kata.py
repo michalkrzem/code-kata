@@ -11,6 +11,9 @@ Then the result should be empty object literal, {}.
 
 def count(value):
     # The function code should be here
-    result = {letter: value.count(letter) for letter in set(value)}
+    try:
+        result = {letter: value.count(letter) for letter in set(value)}
+    except TypeError:
+        return 'Bad typ of parameter in count function'
 
     return result
