@@ -9,11 +9,8 @@ Then the result should be empty object literal, {}.
 """
 
 
-def count(value):
+def count(value: str) -> dict | str:
     # The function code should be here
-    try:
-        result = {letter: value.count(letter) for letter in set(value)}
-    except TypeError:
-        return 'Bad typ of parameter in count function'
-
-    return result
+    return {
+        letter: value.count(letter) for letter in set(value)
+    } if isinstance(value, str) else 'Bad typ of parameter in count function'

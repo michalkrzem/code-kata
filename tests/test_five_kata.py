@@ -19,6 +19,6 @@ def test_five_kata_with_empty_param():
     assert result == {}
 
 
-def test_five_kata_with_number():
-    result = five_kata.count(345)
+def test_five_kata_invalid_type():
+    result = five_kata.count(['s', 's', 'sdds'])
     assert result == 'Bad typ of parameter in count function'
