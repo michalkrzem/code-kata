@@ -7,7 +7,10 @@ All kata are included in the "kata" directory.
 2. 2_kata.py -  a function that turns a string into a **Mexican Wave**.
 3. three_kata.py - translator from **DNA** to **RNA**.
 4. four_kata.py - **multiplicative** persistence
+5. five_kata.py - **count values** in string
+
 ### Tests
+Not all exercises have tests - it depends on my free time and energy.
 To run the tests, You need to run:
 ```shell
 pytest -v
