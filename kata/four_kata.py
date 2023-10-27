@@ -17,15 +17,21 @@ def count_calls(func):
 
 
 @count_calls
-def persistence(n):
+def multiply(n):
     multiplier = 1
     numbers = [int(number) for number in str(n)]
     for number in numbers:
         multiplier *= number
 
     if len(str(multiplier)) > 1:
-        persistence(multiplier)
+        multiply(multiplier)
 
 
-persist = persistence(81110)
-print(persist)
+def persistence(n):
+    counter = multiply(n)
+    print(counter)
+    return counter
+
+
+persistence(4)
+
