@@ -2,7 +2,7 @@
 from kata import five_kata
 
 
-def test_five_kata():
+def test_five_kata_with_param():
     result = five_kata.count("abaadjfjcc")
     assert result == {
         'a': 3,
@@ -14,3 +14,6 @@ def test_five_kata():
     }
 
 
+def test_five_kata_with_empty_param():
+    result = five_kata.count("")
+    assert result == {}
