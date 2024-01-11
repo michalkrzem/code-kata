@@ -9,6 +9,8 @@ All kata are included in the "kata" directory.
 4. four_kata.py - **multiplicative** persistence
 5. five_kata.py - **count values** in string
 6. six_kata.py - return a list with only your **friends** name
+7  seven_kata.py - return reverse string.
+
 
 ### Tests
 Not all exercises have tests - it depends on my free time and energy.
