@@ -12,6 +12,12 @@ from kata import seven_kata
     ]
 )
 def test_solution_with_text(text_input, expected):
+    """
+    Input good text
+    :param text_input:
+    :param expected:
+    :return:
+    """
     seven_kata_result = seven_kata.solution(text_input)
 
     assert seven_kata_result == expected
@@ -26,6 +32,12 @@ def test_solution_with_text(text_input, expected):
     ]
 )
 def test_solution_type_error_value(text_input, expected):
+    """
+    Input different typ of values
+    :param text_input:
+    :param expected:
+    :return:
+    """
     seven_kata_result = seven_kata.solution(text_input)
 
     assert seven_kata_result == expected
